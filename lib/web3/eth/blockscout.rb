@@ -1,6 +1,6 @@
 module Web3
   module Eth
-    class Blockscan
+    class Blockscout
 
       DEFAULT_CONNECT_OPTIONS = {
           open_timeout: 10,
