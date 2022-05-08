@@ -11,7 +11,7 @@ module Web3
 
       attr_reader :connect_options
 
-      def initialize api_key, connect_options: DEFAULT_CONNECT_OPTIONS
+      def initialize connect_options: DEFAULT_CONNECT_OPTIONS
         @connect_options = connect_options
       end
 
