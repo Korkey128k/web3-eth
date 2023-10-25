@@ -216,7 +216,7 @@ module Web3::Eth::Abi
     end
 
     def signature_hash signature, length=64
-      encode_hex(keccak256(signature))[0...length]
+      keccak256(signature)[0...length]
     end
 
 
