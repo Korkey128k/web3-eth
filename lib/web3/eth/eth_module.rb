@@ -33,6 +33,10 @@ module Web3
         TransactionReceipt.new @web3_rpc.request("#{PREFIX}#{__method__}", [tx_hash])
       end
 
+      def getLogs options
+        @web3_rpc.request("#{PREFIX}#{__method__}", [options])
+      end
+
       def contract abi
         Web3::Eth::Contract.new abi, @web3_rpc
       end
